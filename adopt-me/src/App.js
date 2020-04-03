@@ -43,4 +43,4 @@ const App = () => {
   );
 };
 
-render(React.createElement(App), document.getElementById("root"));
+render(<App />, document.getElementById("root"));
