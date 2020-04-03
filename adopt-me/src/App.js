@@ -1,11 +1,9 @@
 import React from "react";
-import {
-    render
-} from "react-dom";
+import { render } from "react-dom";
 import Pet from "./Pet";
 
 const App = () => {
-    return React.createElement(
+  /* return React.createElement(
         "div", {
             id: "something",
             class: "something",
@@ -33,7 +31,16 @@ const App = () => {
                 breed: "Mixed",
             }),
         ]
-    );
+    ); */
+
+  return (
+    <div>
+      <h1 id="something">Adopt Me!</h1>
+      <Pet name="Luna" animal="Dog" breed="Havanese" />
+      <Pet name="Pepper" animal="Bird" breed="Cockatiel" />
+      <Pet name="Doink" animal="Cat" breed="Mixed Test" />
+    </div>
+  );
 };
 
 render(React.createElement(App), document.getElementById("root"));
